@@ -1,0 +1,728 @@
+/* ================== RESET ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================== BODY ================== */
+body {
+    background-color: #f9f9f9;
+    color: #444;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* ================== CONTAINER ================== */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.25rem;
+    background: #2c3e50;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* ================== HEADER ================== */
+header {
+    background: linear-gradient(135deg, #2c3e50, #fff);
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 0.3rem solid #e74c3c;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.6rem;
+}
+
+/* ================== NAVIGATION ================== */
+nav {
+    background: #34495e;
+    text-align: center;
+    padding: 0.75rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e74c3c;
+}
+
+/* ================== HEADINGS ================== */
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    border-bottom: 2px solid #e74c3c;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.2rem;
+}
+
+h2.about {
+    color: #fff;
+    border: none;
+}
+
+/* ================== PARAGRAPHS ================== */
+p {
+    margin-bottom: 1rem;
+    color: #444;
+    font-size: 1.05rem;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    padding: 0.6rem 1rem;
+    background: #ffffff;
+    border-left: 0.3rem solid #e74c3c;
+    border-radius: 0.4rem;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+}
+
+p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-right: 5px;
+}
+
+/* ================== IMAGES ================== */
+img {
+    display: block;
+    margin: 1.25rem auto;
+    border-radius: 0.6rem;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* ================== LISTS ================== */
+ul, ol {
+    margin: 1rem auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.6rem;
+    color: #444;
+}
+
+/* ================== BUTTONS ================== */
+button, .btn {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0.5rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .btn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* ================== FORMS ================== */
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background: #2c3e50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #e74c3c;
+}
+
+/* ================== FOOTER ================== */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* ================== TRAINERS ================== */
+.trainers-intro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.trainer-card {
+    background: white;
+    color: black; /* All text inside is black */
+    padding: 1rem;
+    border-radius: 0.6rem;
+    max-width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainer-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.trainer-card h3 {
+    color: black; /* Headings are black */
+    margin-bottom: 0.5rem;
+}
+
+.trainer-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: black; /* Paragraph text is black */
+}
+
+/* ================== SERVICES ================== */
+.services-section {
+    color: white;
+    background-color: white;
+    padding: 1.25rem;
+    border-radius: 0.6rem;
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+
+
+
+/* ================== Initially hide the items ================== */
+.trainer-card, .product-item {
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Start slightly below the viewport */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* ================== When the element comes into view (visible) ================== */
+.trainer-card.visible, .product-item.visible {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+/* ================== Styling for product items ================== */
+.product-item {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for product items */
+.product-item:hover {
+  transform: translateY(-5px);  /* Slight hover effect */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);  /* Add a shadow effect */
+}
+
+/* ================== Images ================== */
+img {
+  display: block;
+  margin: 1.25rem auto;
+  border-radius: 0.6rem;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+
+/* ================== RESPONSIVE MEDIA QUERIES ================== */
+/* Tablet */
+@media (max-width: 1024px) {
+    nav a {
+        margin: 0.5rem;
+    }
+    .products-section ul, .products-section ol {
+        gap: 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    .trainers-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .products-section ul, .products-section ol {
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    body {
+        font-size: 0.95rem;
+    }
+
+    .scrolling h2{
+
+        text-align: center;
+    }
+}
+
+/* ================== DARK MODE ================== */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for readability */
+}
+
+body.dark-mode header {
+    background: #1f1f1f;
+    color: #fff;
+    border-bottom-color: #e74c3c;
+}
+
+body.dark-mode nav {
+    background: #2c2c2c;
+}
+
+body.dark-mode nav a {
+    color: #e0e0e0;
+}
+
+body.dark-mode nav a:hover {
+    color: #e74c3c;
+}
+
+body.dark-mode .container {
+    background: #1f1f1f;
+    color: #e0e0e0;
+}
+
+body.dark-mode p {
+    background: #2c2c2c;
+    border-left-color: #e74c3c;
+    color: #e0e0e0;
+}
+
+body.dark-mode .trainer-card {
+    background: #2c2c2c;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-mode .products-section li {
+    background: #2c2c2c;
+    border-color: #555;
+    color: #e0e0e0;
+}
+
+/* ================== TOGGLE BUTTON ================== */
+.toggle-button {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #2980b9;
+}
+
+
+
+/* ================== PERSONAL TRAINER LAYOUT ================== */
+.trainers-intro {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.trainer-card {
+    background-color: #fff;
+    padding: 2rem;
+    border: 2px solid #ddd;
+    border-radius: 0.5rem;
+    width: calc(33.33% - 1.33rem); 
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.trainer-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.trainer-card h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.trainer-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+.more-details-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.more-details-btn:hover {
+    background-color: #0056b3;
+}
+
+.trainer-description {
+    display: none; /* Hide the description initially */
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 1rem;
+}
+/* ===== MODAL STYLES ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #e74c3c;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #c0392b;
+}
+
+/* Map Container */
+#map {
+    height: 400px;           
+    width: 90%;              
+    max-width: 1000px;       
+    margin: 1rem auto;       
+    border-radius: 8px;      
+    background-color: #e5e5e5; 
+}
+
+@media (max-width: 768px) {
+    #map {
+        height: 300px;  
+        width: 95%;    
+    }
+}
+
+/* just added */
+.product-item img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+.product-item.fade-in {
+  transition-delay: 0.2s;
+}
+.trainer-card,
+.product-item {
+  opacity: 0;
+  transform: translateY(40px); /* More dramatic entrance */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.trainer-card,
+.product-item {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.trainer-card.visible,
+.product-item.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.trainer-card.visible,
+.product-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add this line */
+}
+/* ===== LIGHTBOX STYLES ===== */
+.lightbox {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.product-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem auto;
+  flex-wrap: wrap;
+}
+
+.product-controls input,
+.product-controls select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+
+body.dark-mode .product-controls input,
+body.dark-mode .product-controls select {
+  background: #2c2c2c;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+
+
+.error-messages p {
+  margin: 0.5rem 0;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+
+.error-messages p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.error-messages p[style*="red"] {
+  color: #e74c3c;
+}
+
+.error-messages p[style*="green"] {
+  color: #27ae60;
+}
+
+
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover & Focus effect */
+form select:hover,
+form select:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.4);
+  outline: none;
+}
+
+body.dark-mode form select {
+  background: #2c2c2c;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+.lightbox .prev-btn,
+.lightbox .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.lightbox .prev-btn { left: 20px; }
+.lightbox .next-btn { right: 20px; }
+
+.lightbox .prev-btn:hover,
+.lightbox .next-btn:hover {
+  background: rgba(231, 76, 60, 0.8); /* red hover */
+}
+h2.scrolling {
+  text-align: center;     
+  display: block;         
+  margin: 2rem auto;     
+  font-size: 2rem;        
+  color: #2c3e50;        
+  border: none;           
+}
+
+
+.products-section ul,
+.products-section ol {
+  text-align: center;   
+  list-style-position: inside; 
+  margin: 1rem auto;   
+  padding: 0;          
+}
+
+
+.products-section li {
+  text-align: center;
+  margin: 0.5rem auto;
+  max-width: 600px;     
+}
+
+.products-section h2 {
+  text-align: center;   
+  display: block;       
+  margin: 2rem auto;    
+  font-size: 1.8rem;    
+  color: #2c3e50;       
+  border: none;         
+}

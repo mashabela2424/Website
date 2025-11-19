@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Title Tag -->
+    <title>About Lift Kings | Professional Fitness Coaching & Personal Trainers</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Learn more about Lift Kings, a fitness coaching and personal training business dedicated to helping clients achieve healthier lifestyles through custom workouts, meal plans, and expert trainers.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="fitness coaching, personal trainers, Lift Kings, workout plans, online coaching, health and fitness, personal training">
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="About Lift Kings | Professional Fitness Coaching & Personal Trainers">
+    <meta property="og:description" content="Discover Lift Kings, a fitness coaching and personal training brand helping clients achieve healthier lifestyles with expert trainers, custom workouts, and nutrition plans.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.liftkings.com/about">
+    <meta property="og:image" content="https://www.liftkings.com/images/about-banner.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Lift Kings | Professional Fitness Coaching & Personal Trainers">
+    <meta name="twitter:description" content="Learn more about Lift Kings, a fitness coaching and personal training business dedicated to healthier lifestyles.">
+    <meta name="twitter:image" content="https://www.liftkings.com/images/about-banner.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.liftkings.com/about">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>About Lift Kings</h1>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About Us</a>
+        <a href="products.html">Products & Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+
+        <button id="toggle-dark-mode" class="toggle-button">Light Mode</button>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2 class="about">Who We Are</h2>
+            <p>
+                Lift Kings is a professional personal training and fitness coaching business committed to helping clients 
+                build healthier lifestyles through structured workouts, nutrition planning, and expert guidance.
+            </p>
+
+            <!-- Trainer Section -->
+            <h2 class="about">Our Personal Trainers</h2>
+            <div id="trainers-container" class="trainers-intro"></div>
+
+            <!-- Trainer Modal -->
+            <div id="trainerModal" class="modal" role="dialog" aria-labelledby="trainerName" aria-describedby="trainerBio">
+                <div class="modal-content">
+                    <span class="close-btn" aria-label="Close">&times;</span>
+                    <h2 id="trainerName"></h2>
+                    <p id="trainerBio"></p>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="services-section">
+                <h2 class="services-title">Our Services</h2>
+                <ul class="Services">
+                    <li>One-on-one personal training (in-person & online)</li>
+                    <li>Custom meal planning tailored to your goals</li>
+                    <li>Workout guides (videos + written programs)</li>
+                    <li>Progress tracking and fitness assessments</li>
+                </ul>
+
+                <h2 class="services-title">Who We Help</h2>
+                <ul>
+                    <li>Adults committed to improving their health and fitness</li>
+                    <li>Clients who prefer flexible online coaching</li>
+                    <li>Beginners seeking structured guidance and motivation</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Lift Kings. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Lightbox Structure -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-label="Trainer Image Lightbox">
+      <span class="close-lightbox" aria-label="Close">&times;</span>
+      <img class="lightbox-image" src="" alt="Lift Kings certified personal trainer">
+    </div>
+
+    <!-- Schema Markup (Organization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Lift Kings",
+      "url": "https://www.liftkings.com",
+      "logo": "https://www.liftkings.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/liftkings",
+        "https://www.instagram.com/liftkings",
+        "https://twitter.com/liftkings"
+      ],
+      "description": "Lift Kings is a professional fitness coaching and personal training business helping clients achieve healthier lifestyles through workouts, nutrition plans, and expert trainers."
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- SEO Title -->
+    <title>Enquiry | Contact Lift Kings for Fitness Coaching & Training</title>
+
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Send an enquiry to Lift Kings for personal training, fitness coaching, online programs, or general questions. Our team will respond quickly to help you begin your fitness journey.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Lift Kings enquiry, fitness enquiry, personal training contact, fitness coaching form, online coaching enquiry">
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Enquiry | Contact Lift Kings for Fitness Coaching & Training">
+    <meta property="og:description" content="Send an enquiry to Lift Kings for fitness coaching, personal training, or online programs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.liftkings.com/enquiry">
+    <meta property="og:image" content="https://www.liftkings.com/images/enquiry-banner.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Enquiry | Contact Lift Kings for Fitness Coaching & Training">
+    <meta name="twitter:description" content="Reach out to Lift Kings with your fitness coaching or training enquiry.">
+    <meta name="twitter:image" content="https://www.liftkings.com/images/enquiry-banner.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.liftkings.com/enquiry">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="about">Enquiry</h1>
+
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products & Services</a>
+            <a href="enquiry.html" aria-current="page">Enquiry</a>
+            <a href="contact.html">Contact</a>
+
+            <button id="toggle-dark-mode" class="toggle-button">Light Mode</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Contact Us</h2>
+            <p>
+                Have a question about our fitness coaching, programs, or pricing?  
+                Send us a message and our team will get back to you as soon as possible.
+            </p>
+
+            <form action="#" method="post" novalidate aria-label="Enquiry Form">
+                <input type="text" name="name" placeholder="Your Name" aria-label="Your Name">
+                <input type="email" name="email" placeholder="Your Email" aria-label="Your Email">
+
+                <!-- Message Type Dropdown -->
+                <select name="messageType" required aria-label="Message Type">
+                    <option value="">Select Message Type</option>
+                    <option value="services">Services</option>
+                    <option value="products">Products</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="sponsor">Sponsor</option>
+                    <option value="general">General Enquiry</option>
+                </select>
+
+                <textarea name="message" placeholder="Your Message" rows="5" aria-label="Your Message"></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script> 
+
+    <footer>
+        <p>&copy; 2025 Lift Kings. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Schema Markup (Contact Page) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Lift Kings",
+        "url": "https://www.liftkings.com",
+        "logo": "https://www.liftkings.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Support",
+          "email": "info@liftkings.com",
+          "telephone": "+27 11 123 4567",
+          "areaServed": "ZA",
+          "availableLanguage": ["en"]
+        }
+      }
+    }
+    </script>
+
+</body>
+</html>
